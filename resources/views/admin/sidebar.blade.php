@@ -317,14 +317,13 @@
                         </ul>
                     </div>
                 </li>
-
                 <li
                     class="nav-item {{ request()->routeIs('appsettingshow') ? 'active' : '' }} {{ request()->routeIs('termspolicy') ? 'active' : '' }} {{ request()->routeIs('refsetshow') ? 'active' : '' }} {{ request()->routeIs('paymentview') ? 'active' : '' }} {{ request()->routeIs('subview') ? 'active' : '' }} {{ request()->routeIs('frontpage') ? 'active' : '' }} {{ request()->routeIs('allipaddress') ? 'active' : '' }} {{ request()->routeIs('ipaddress') ? 'active' : '' }} {{ request()->routeIs('editpaymethod') ? 'active' : '' }} {{ request()->routeIs('managecryptoasset') ? 'active' : '' }}">
-                    <!--<a data-toggle="collapse" href="#settings">-->
-                    <!--    <i class="fa fa-cog"></i>-->
-                    <!--    <p>Settings</p>-->
-                    <!--    <span class="caret"></span>-->
-                    <!--</a>-->
+                    <a data-toggle="collapse" href="#settings">
+                        <i class="fa fa-cog"></i>
+                        <p>Settings</p>
+                        <span class="caret"></span>
+                    </a>
                     <div class="collapse" id="settings">
                         <ul class="nav nav-collapse">
                             <li>

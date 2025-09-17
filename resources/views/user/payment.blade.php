@@ -6,7 +6,7 @@
     <!-- Alerts -->
     <x-danger-alert />
     <x-success-alert />
-    <x-error-alert />
+    <x-error-alert /> 
 
     <!-- Page Header with Breadcrumbs -->
     <div class="flex flex-col mb-6">

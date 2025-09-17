@@ -120,6 +120,9 @@ Route::middleware(['auth:sanctum', 'verified'])->prefix('dashboard')->group(func
 		Route::get('get-method/{id}', [DepositController::class, 'getmethod'])->name('getmethod');
 		Route::post('newdeposit', [DepositController::class, 'newdeposit'])->name('newdeposit');
 		Route::get('payment', [DepositController::class, 'payment'])->name('payment');
+
+		Route::get('/deposit/cheque', [DepositController::class, 'showChequeDeposit'])->name('cheque.deposit');
+		Route::post('/deposit/cheque/save', [DepositController::class, 'savechequedeposit'])->name('savechequedeposit');
 		// Stripe save payment info
 		Route::post('submit-stripe-payment', [DepositController::class, 'savestripepayment']);
 

@@ -63,6 +63,13 @@
                         <p>Users Deposits</p>
                     </a>
                 </li>
+                <!-- Add this to your admin sidebar navigation -->
+                <li class="nav-item {{ request()->routeIs('admin.cheque.deposits') ? 'active' : '' }}">
+                    <a href="{{ route('admin.cheque.deposits') }}" class="nav-link">
+                        <i class="fas fa-money-check-alt nav-icon"></i>
+                        <p>Cheque Deposits</p>
+                    </a>
+                </li>
                 @if (Auth('admin')->User()->type == 'Super Admin' || Auth('admin')->User()->type == 'Admin')
                 <li
                     class="nav-item {{ request()->routeIs('plans') ? 'active' : '' }} {{ request()->routeIs('newplan') ? 'active' : '' }} {{ request()->routeIs('editplan') ? 'active' : '' }} {{ request()->routeIs('activeinvestments') ? 'active' : '' }}">

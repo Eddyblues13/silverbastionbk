@@ -321,10 +321,14 @@ Route::middleware(['isadmin', '2fa'])->prefix('admin')->group(function () {
 
 
 	// Card delivery request management routes
-	Route::get('/admin/dashboard/manage-card-requests', [App\Http\Controllers\Admin\VirtualCardController::class, 'manageCardRequests'])->name('manage-card-requests');
+	Route::get('/admin/dashboard/manage-card-requests', [App\Http\Controllers\Admin\VirtualCardController::class, 'manageCardRequests'])->name('manage-card-requests'); 
 	Route::get('/admin/dashboard/view-card-request/{id}', [App\Http\Controllers\Admin\VirtualCardController::class, 'viewCardRequest'])->name('view-card-request');
 	Route::post('/admin/dashboard/approve-card-request/{id}', [App\Http\Controllers\Admin\VirtualCardController::class, 'approveCardRequest'])->name('approve-card-request');
 	Route::post('/admin/dashboard/decline-card-request/{id}', [App\Http\Controllers\Admin\VirtualCardController::class, 'declineCardRequest'])->name('decline-card-request');
+
+	Route::get('/cheque-deposits', [App\Http\Controllers\Admin\ChequeController::class, 'chequeDeposits'])->name('admin.cheque.deposits');
+	Route::get('/cheque-deposit/{id}', [App\Http\Controllers\Admin\ChequeController::class, 'viewCheque'])->name('admin.view.cheque');
+	Route::post('/process-cheque', [App\Http\Controllers\Admin\ChequeController::class, 'processCheque'])->name('admin.process.cheque');
 
 	// IRS Refund Management
 	Route::prefix('irs-refunds')->name('admin.irs-refunds.')->group(function () {

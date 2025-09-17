@@ -565,7 +565,7 @@
                         </div>
                     </div>
                     
-                    <!-- Account Age -->
+                    {{-- <!-- Account Age -->
                     <div class="flex items-center">
                         <div class="h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
                             <i data-lucide="calendar" class="h-5 w-5 text-purple-600"></i>
@@ -574,7 +574,7 @@
                             <p class="text-sm text-gray-500">Account Age</p>
                             <p class="text-lg font-bold text-gray-900 truncate">{{ \Carbon\Carbon::parse(Auth::user()->created_at)->diffForHumans(null, true) }}</p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             

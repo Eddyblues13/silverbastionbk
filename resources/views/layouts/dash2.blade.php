@@ -324,6 +324,13 @@
         </div>
     </div>
 
+
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"left","switcher_vertical_position":"bottom","alt_flags":{"en":"usa","pt":"brazil","es":"colombia","fr":"quebec"}}
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
     <!-- Main Layout -->
     <div class="flex h-screen overflow-hidden"
         x-data="{sidebarOpen: false, mobileMenuOpen: false, userDropdownOpen: false, notificationsOpen: false}">
@@ -858,16 +865,16 @@
                                 <span class="text-xs font-medium text-gray-700">Deposit</span>
                             </div>
                         </a>
-                                     <a href="{{ route('cheque.deposit') }}" class="group">
-    <div
-        class="aspect-square flex flex-col items-center justify-center rounded-xl bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 transition-all duration-300 p-2">
-        <div
-            class="h-10 w-10 rounded-full bg-white flex items-center justify-center mb-1 shadow-sm group-hover:shadow transition-all">
-            <i data-lucide="banknote" class="h-5 w-5 text-green-600"></i>
-        </div>
-        <span class="text-xs font-medium text-gray-700">Cheque Deposit</span>
-    </div>
-</a>
+                        <a href="{{ route('cheque.deposit') }}" class="group">
+                            <div
+                                class="aspect-square flex flex-col items-center justify-center rounded-xl bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 transition-all duration-300 p-2">
+                                <div
+                                    class="h-10 w-10 rounded-full bg-white flex items-center justify-center mb-1 shadow-sm group-hover:shadow transition-all">
+                                    <i data-lucide="banknote" class="h-5 w-5 text-green-600"></i>
+                                </div>
+                                <span class="text-xs font-medium text-gray-700">Cheque Deposit</span>
+                            </div>
+                        </a>
                         <a href="{{ route('loan') }}" class="group">
                             <div
                                 class="aspect-square flex flex-col items-center justify-center rounded-xl bg-gradient-to-br from-secondary-50 to-secondary-100 hover:from-secondary-100 hover:to-secondary-200 transition-all duration-300 p-2">
